@@ -1,0 +1,26 @@
+.logo-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-wrapper > img {
+    padding: .5rem .5rem;
+    height: var(--navbar-height);
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    height: var(--navbar-height);
+    justify-content: center;
+}
+
+.brand-name {
+    font-size: 30px;
+}
+
+.brand-type {
+    padding-bottom: .5rem;
+    font-style: italic;
+}
