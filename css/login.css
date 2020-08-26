@@ -1,0 +1,71 @@
+.header, .footer {
+    background-color: var(--dark-purple);
+    color: white;
+    height: 8vh; 
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: #2EC4B6;
+    height: 84vh;
+}
+
+.login-area  {
+    text-align: center;
+    background-color: var(--dark-purple);
+    padding: 40px;
+    flex: 0 1 auto;
+    align-self: center;
+    border-radius: 20px;
+    color: var(--mellow-apricot);
+    box-shadow: 0 15px 25px var(--dark-purple);
+}
+
+.login-area a {
+    color: white;
+}
+
+.login-area label {
+    display: block;
+    padding-bottom: 3px;
+    color: var(--dark-purple);
+}
+
+form input[type='text'],
+form input[type='password'] {
+    width: 100%;    
+    border: 0;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-area {
+    text-align: left;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.login-area button {
+    padding: 7px 20px;
+    color: var(--dark-purple);
+    border: 1px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--tiffany-blue);
+}
+
+.footer a {
+    color: white;
+}
