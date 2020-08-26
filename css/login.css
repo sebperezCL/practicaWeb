@@ -69,3 +69,9 @@ form input[type='password'] {
 .footer a {
     color: white;
 }
+
+@media all and (min-width: 768px) {
+    .main {
+        background-image: url("../img/logo.png");
+    }
+}
