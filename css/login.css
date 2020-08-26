@@ -78,4 +78,9 @@ form input[type='password'] {
     .login-area  {
         box-shadow: 15px 15px 20px white, -15px -15px 20px white, -15px 15px 20px white, 15px -15px 20px white;
     }
+
+    .login-area button:hover {
+        color: var(--mellow-apricot);
+        background-color: var(--dark-purple);
+    }
 }
