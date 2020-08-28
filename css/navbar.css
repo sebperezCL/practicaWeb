@@ -106,5 +106,22 @@
 }
 
 #search-submit {
+    /* position: absolute;
+    top: 15px;
+    right: 70px; */
     outline: none;
+    background-color: var(--tiffany-blue);
+    border: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px 5px 5px 5px; /* cambiar cuando se despliegue el textbox */
+}
+
+form input[type='text'] {
+    /* position: absolute; */
+    height: 35px;
+    border: 0;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px 0 0 5px;
 }
