@@ -51,10 +51,6 @@
     display: none;
 }
 
-.navbar form {
-    display: none;
-}
-
 /* Menú abierto */ 
 
 #burger-checkbox:checked ~ .navbar-list {
@@ -72,6 +68,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Cambio el color del burger para que se vea mejor con el menú abierto */
+#burger-checkbox:checked ~ .burger-label::before {
+    background-color: var(--dark-purple);
+    box-shadow: 0 0.25em 0 0 var(--dark-purple),
+                0 0.5em 0 0 var(--dark-purple);
 }
 
 .navbar-list li {
@@ -95,3 +98,13 @@
 
 .navbar-list a:hover {
     background-color: var(--mellow-apricot);
+}
+
+.navbar form {
+    display: flex;
+    align-items: center;
+}
+
+#search-submit {
+    outline: none;
+}
