@@ -84,3 +84,5 @@ form input[type='password'] {
         background-color: var(--dark-purple);
     }
 }
+
+@media all and (min-width: 1200px) {}
