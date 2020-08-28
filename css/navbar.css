@@ -45,7 +45,7 @@
     height: 43px;
 }
 
-/* menú cerrado */
+/* Menú cerrado */
 
 .navbar-list {
     display: none;
@@ -54,6 +54,8 @@
 .navbar form {
     display: none;
 }
+
+/* Menú abierto */ 
 
 #burger-checkbox:checked ~ .navbar-list {
     position: absolute;
@@ -91,7 +93,5 @@
     text-align: center;
 }
 
-
 .navbar-list a:hover {
-    background-color: gray;
-}
+    background-color: var(--mellow-apricot);
