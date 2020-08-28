@@ -6,30 +6,53 @@
 }
 
 .logo-wrapper > img {
-    padding: .5rem .5rem;
-    height: 100%;
+    margin: 0;
+    padding: .2rem;
+    height: 70%;
+    width: auto;
+    object-fit: contain;
 }
 
 .brand {
     display: flex;
     flex-direction: column;
     height: var(--navbar-height);
-    width: 150px;
+    width: 100px; /* Tuve que setear el ancho con un valor absoluto, de otra forma me dejaba un wrap en el nombre */
     justify-content: center;
 }
 
 .brand-name {
-    font-size: 30px;
-    margin-right: 10px;
+    font-size: 20px;
+    width: auto;
+    /* margin-right: 10px; */
 }
 
 .brand-type {
-    padding-bottom: .5rem;
+    /* padding-bottom: .5rem; */  
+    font-size: 12px;  
     font-style: italic;
+    width: auto;
 }
 
 @media all and (min-width: 768px) {
     .brand-name:hover {
         color: #FF9F1C;
+    }
+
+    .logo-wrapper > img {
+        height: 100%;
+    }
+    
+    .brand-name {
+        width: 280px;
+    }
+
+    .brand-name {
+        font-size: 30px;
+    }
+
+    .brand-type {
+        /* padding-bottom: .5rem; */  
+        font-size: 16px;  
     }
 }

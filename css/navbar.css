@@ -30,8 +30,8 @@
     position: absolute;
     top: 0.25em;
     left: 0.1em;
-    box-shadow: 0 0.25em 0 0 var(--mellow-apricot),
-                0 0.5em 0 0 var(--mellow-apricot);
+    box-shadow: 0 0.3em 0 0 var(--mellow-apricot),
+                0 0.6em 0 0 var(--mellow-apricot);
 }
 
 #burger-checkbox {
@@ -102,26 +102,25 @@
 
 .navbar form {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
+    justify-items: flex-start;
 }
 
 #search-submit {
-    /* position: absolute;
-    top: 15px;
-    right: 70px; */
     outline: none;
     background-color: var(--tiffany-blue);
     border: none;
-    height: 35px;
-    width: 35px;
-    border-radius: 5px 5px 5px 5px; /* cambiar cuando se despliegue el textbox */
+    height: 30px;
+    width: 30px;
+    border-radius: 5px 0px 0px 5px; /* cambiar cuando se despliegue el textbox */
 }
 
-form input[type='text'] {
-    /* position: absolute; */
-    height: 35px;
+form input[type='text'] {    
+    height: 30px;
+    width: 150px;
     border: 0;
     font-size: 16px;
     outline: none;
-    border-radius: 5px 0 0 5px;
+    border-radius: 0px 5px 5px 0px;
 }
