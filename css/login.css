@@ -1,7 +1,7 @@
 .header, .footer {
     background-color: var(--dark-purple);
     color: white;
-    height: 8vh; 
+    height: var(--navbar-height); 
 }
 
 .footer {
@@ -16,7 +16,7 @@
     justify-content: center;
     width: 100%;
     background-color: #2EC4B6;
-    height: 84vh;
+    height: calc(100vh - var(--navbar-height)*2)
 }
 
 .login-area  {

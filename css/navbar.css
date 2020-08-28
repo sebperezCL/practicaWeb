@@ -1,0 +1,97 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark-purple);
+    color: white;
+    height: var(--navbar-height); 
+    display: flex;
+}
+
+.burger-label {
+    width: 60px;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 40px;
+    flex: 1;
+    z-index: 2;
+}
+
+.burger-label::before {
+    content: '';
+    background-color: var(--mellow-apricot);
+    width: 1em;
+    height: .1em;
+    position: absolute;
+    top: 0.25em;
+    left: 0.1em;
+    box-shadow: 0 0.25em 0 0 var(--mellow-apricot),
+                0 0.5em 0 0 var(--mellow-apricot);
+}
+
+#burger-checkbox {
+    position: absolute;
+    top: 8px; /* Posiciono el checkbox sobre el burger para que se pueda chequear */
+    right: 11px; /* un poco más a la derecha para que quede más espacio al presionar */
+    z-index: 3; /* lo pongo por sobre el burger */
+    opacity: 0;
+    cursor: pointer;
+    width: 45px;
+    height: 43px;
+}
+
+/* menú cerrado */
+
+.navbar-list {
+    display: none;
+}
+
+.navbar form {
+    display: none;
+}
+
+#burger-checkbox:checked ~ .navbar-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0px;
+    padding-top: 70px;
+    list-style: none;
+    background: #ededed;
+    opacity: .9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-list li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar-list a {
+    display: block;
+    text-decoration: none;
+    color: var(--dark-purple);
+    font-weight: bold;
+    padding: .5rem;
+    padding-left: 1rem;
+    width: auto;
+    margin-left: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.navbar-list a:hover {
+    background-color: gray;
+}
