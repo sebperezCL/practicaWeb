@@ -5,7 +5,15 @@
     height: inherit;
 }
 
-.logo-wrapper > img {
+.logo-link {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 70%;
+    width: auto;
+}
+
+.logo-link > img {
     margin: 0;
     padding: .2rem;
     height: 70%;
@@ -35,7 +43,10 @@
 }
 
 @media all and (min-width: 768px) {
-     .logo-wrapper > img {
+    .logo-link {
+        height: 100%;
+    }
+     .logo-link > img {
         height: 100%;
     }
     
