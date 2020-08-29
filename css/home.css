@@ -1,0 +1,15 @@
+.main {
+    margin-top: var(--navbar-height);
+}
+
+.category-section {
+    display: flex;
+}
+
+.book-container {
+    padding: .5rem;
+}
+
+.book-container > a {
+    text-decoration: none;
+}
