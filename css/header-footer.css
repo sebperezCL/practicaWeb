@@ -2,12 +2,14 @@
     background-color: var(--dark-purple);
     color: white;
     height: var(--navbar-height); 
+    position: relative;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .footer a {
