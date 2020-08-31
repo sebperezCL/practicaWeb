@@ -1,15 +1,3 @@
-.header, .footer {
-    background-color: var(--dark-purple);
-    color: white;
-    height: var(--navbar-height); 
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .main {
     display: flex;
     flex-direction: row;
@@ -64,10 +52,6 @@ form input[type='password'] {
     border-radius: 5px;
     outline: none;
     background-color: var(--tiffany-blue);
-}
-
-.footer a {
-    color: white;
 }
 
 @media all and (min-width: 768px) {

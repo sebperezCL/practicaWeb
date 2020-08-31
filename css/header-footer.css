@@ -1,0 +1,15 @@
+.header, .footer {
+    background-color: var(--dark-purple);
+    color: white;
+    height: var(--navbar-height); 
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    color: white;
+}
