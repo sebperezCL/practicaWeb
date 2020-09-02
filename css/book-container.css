@@ -1,0 +1,71 @@
+.book-container {
+    position: relative;
+    padding: .5rem;
+}
+
+.book-container > a {
+    text-decoration: none;
+}
+
+.book-container > a::after {
+    font-family: 'icomoon';
+    font-size: 30px;
+    color: white;
+    content: "\e920";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.book-container.favorite > a::after {
+    color: red;
+}
+
+.book-cover {
+    display: flex;
+    align-items: center;
+    border: 1px var(--dark-purple) solid;
+}
+
+.book-cover > img {
+    width: auto;
+    object-fit: contain;
+}
+
+.book-detail {
+    position: absolute;
+    background-color: black;
+    opacity: .7;
+    color: white;
+    bottom: .5rem;
+    width: calc(100% - 1rem);
+    padding: .5rem;
+}
+
+.book-meta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px white solid;
+    padding-top: 5px;
+    border-bottom: 1px white solid;
+    padding-bottom: 5px;
+}
+
+.book-title {
+    color: var(--mellow-apricot);
+}
+
+@media all and (hover: hover) {
+
+    .book-detail {
+        opacity: 0;
+        transition: all .4s ease-in;
+        transform: translateY(-70%)
+    }
+
+    .book-container > a:hover .book-detail {
+        opacity: .9;
+        transform: translateY(0);
+    }
+}
