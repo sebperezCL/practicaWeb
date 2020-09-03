@@ -40,8 +40,18 @@
     right: 1rem;
 }
 
+
 .book-container.favorite > a::after {
     content: '\e9d9';    
+}
+
+/* oculto el contenido en la página de detalle del libro */
+.book-container.related > a::after {
+    content: '';
+}
+
+.book-container.related .book-detail {
+    display: none;
 }
 
 .book-cover {
