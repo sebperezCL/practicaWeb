@@ -5,12 +5,6 @@
     position: relative;
 }
 
-.header-detail {
-    margin: 0;
-    margin-top: var(--navbar-height);
-    padding: 0;
-}
-
 .footer {
     display: flex;
     justify-content: center;
