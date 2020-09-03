@@ -17,6 +17,10 @@
     justify-items: start;    
 }
 
+.category-section.related {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
 .book-container {
     position: relative;
     padding: .5rem;
@@ -26,19 +30,19 @@
     text-decoration: none;
 }
 /* icono favorito en cada portada */
-/* .book-container > a::after {
+.book-container > a::after {
     font-family: 'icomoon';
     font-size: 30px;
-    color: white;
-    content: "\e920";
+    color: var(--tiffany-blue);
+    content: '\e9d7';
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
 
 .book-container.favorite > a::after {
-    color: red;
-} */
+    content: '\e9d9';    
+}
 
 .book-cover {
     display: flex;

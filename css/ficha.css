@@ -151,7 +151,7 @@
     }
 
     .book-wrapper {
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr auto;
         grid-template-areas: "cover summary summary" "cover video meta";
     }
 
