@@ -40,7 +40,6 @@
     right: 1rem;
 }
 
-
 .book-container.favorite > a::after {
     content: '\e9d9';    
 }

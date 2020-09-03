@@ -30,7 +30,7 @@
     grid-area: meta;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;    
+    justify-content: flex-start;        
 }
 
 .book-record > .book-name, .book-record-data {
@@ -51,6 +51,7 @@
 }
 
 .record-field {
+    padding: 5px;
     font-weight: bold;
 }
 
